@@ -1,0 +1,121 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/consent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Consent",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "A group of flags that indicate the choices that have been made regarding how associated data may be used.",
+  "definitions": {
+    "@id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The unique identifier for the consent."
+    },
+    "xdm:i1": {
+      "title": "I1",
+      "type": "boolean",
+      "description": "Data that can specifically identify or enable direct contact with an individual.",
+      "default": true
+    },
+    "xdm:i2": {
+      "title": "I2",
+      "type": "boolean",
+      "description": "Data that can be used in combination with any other data to identify or enable direct contact with an individual.",
+      "default": true
+    },
+    "xdm:s1": {
+      "title": "S1",
+      "type": "boolean",
+      "description": "Treat as precise geo-location data.",
+      "default": true
+    },
+    "xdm:s2": {
+      "title": "S2",
+      "type": "boolean",
+      "description": "Treat as geo-fence data.",
+      "default": true
+    },
+    "xdm:c1": {
+      "title": "C1",
+      "type": "boolean",
+      "description": "Data can only be exported from Adobe Experience Cloud, in an aggregated form without including individual or device identifiers.",
+      "default": true
+    },
+    "xdm:c2": {
+      "title": "C2",
+      "type": "boolean",
+      "description": "Data cannot be exported to a 3rd party.",
+      "default": true
+    },
+    "xdm:c3": {
+      "title": "C3",
+      "type": "boolean",
+      "description": "Data cannot be used in conjunction with directly identifiable information.",
+      "default": true
+    },
+    "xdm:c4": {
+      "title": "C4",
+      "type": "boolean",
+      "description": "Data cannot be used for any targeting, including customer's own sites and apps.",
+      "default": true
+    },
+    "xdm:c5": {
+      "title": "C5",
+      "type": "boolean",
+      "description": "Data cannot be used for targeting on customer's own sites and apps.",
+      "default": true
+    },
+    "xdm:c6": {
+      "title": "C6",
+      "type": "boolean",
+      "description": "Data cannot be used for cross-site targeting.",
+      "default": true
+    },
+    "xdm:c7": {
+      "title": "C7",
+      "type": "boolean",
+      "description": "Data cannot be used for performance and optimization of customer's own website.",
+      "default": true
+    },
+    "xdm:c8": {
+      "title": "C8",
+      "type": "boolean",
+      "description": "Data cannot be used for Data Science Workflows.",
+      "default": true
+    },
+    "xdm:c9": {
+      "title": "C9",
+      "type": "boolean",
+      "description": "Data cannot be matched to off-line sources.",
+      "default": true
+    },
+    "xdm:c10": {
+      "title": "C10",
+      "type": "boolean",
+      "description": "Data cannot be used to create device graphs.",
+      "default": true
+    },
+    "xdm:c11": {
+      "title": "C11",
+      "type": "boolean",
+      "description": "Data cannot be used with Precise Geo Location data like S1.",
+      "default": true
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/consent"
+    }
+  ],
+  "meta:status": "experimental"
+}

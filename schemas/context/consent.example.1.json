@@ -1,0 +1,17 @@
+{
+  "xdm:i1": true,
+  "xdm:i2": true,
+  "xdm:s1": false,
+  "xdm:s2": true,
+  "xdm:c1": true,
+  "xdm:c2": true,
+  "xdm:c3": true,
+  "xdm:c4": true,
+  "xdm:c5": true,
+  "xdm:c6": true,
+  "xdm:c7": true,
+  "xdm:c8": true,
+  "xdm:c9": true,
+  "xdm:c10": true,
+  "xdm:c11": false
+}
